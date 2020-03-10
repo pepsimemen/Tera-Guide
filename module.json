@@ -1,0 +1,13 @@
+{
+    "name": "Tera-Guide",
+    "disableAutoUpdate": false,
+    "options": {
+        "niceName": "Dungeon Guides",
+        "guiName": "Tera-Guide"
+    },
+    "author": "ZC,Pepsi",
+    "description": "Tera Dungeon Guides",
+    "servers": ["https://raw.githubusercontent.com/pepsimemen/Tera-Guide/master/"],
+    "supportUrl": "https://github.com/tera-mod/pepsimemen/issues",
+    "version": "86.06"
+}
