@@ -33,5 +33,4 @@ Original Guide: https://github.com/tera-mod/TERA-Guide from ZC.
 Proxy(/8) Usage (proxy command) | description
 --- | ---
 tguide | enabled / disabled
-tguide party | Send To Party
-tguide stream | Send To Stream
+tguide stream | toggle stream mode
