@@ -78,11 +78,11 @@ module.exports = function Tera_Guide(mod) {
 					mod.command.message("Stream Mode" + (SendToStream ? "Enabled" : "Disabled"));
 					break;
 				case "info":
-					mod.command.message("模块开关: " + Enabled);
-					mod.command.message("主播模式 " + (SendToStream ? "启用" : "禁用"));
-					mod.command.message("登陆地区: " + whichzone);
-					mod.command.message("副本地图: " + whichmode);
-					mod.command.message("区域位置: " + whichboss);
+					mod.command.message("Module Switch: " + Enabled);
+					mod.command.message("Stream Mode " + (SendToStream ? "Enabled" : "Disabled"));
+					mod.command.message("Zone: " + whichzone);
+					mod.command.message("Mode: " + whichmode);
+					mod.command.message("Area Location: " + whichboss);
 					mod.command.message("bossID: "   + boss_GameID);
 					mod.command.message("isTank: "   + isTank);
 					mod.command.message("isHealer: " + isHealer);
@@ -97,7 +97,7 @@ module.exports = function Tera_Guide(mod) {
 					mod.command.message("debug: " + (debug ? "on" : "off"));
 					break;
 				default :
-					mod.command.message("无效的参数!");
+					mod.command.message("Invalid parameters!");
 					break;
 			}
 		}
@@ -947,7 +947,7 @@ module.exports = function Tera_Guide(mod) {
 			mod.command.message(msg);
 		} else {
 			mod.send('S_CHAT', 3 , {
-				channel: chl ? chl : 21, // 21 = 队长通知, 1 = 组队, 2 = 公会, 25 = 团长通知
+				channel: chl ? chl : 21, // 21 = Party_Notice, 1 = Party, 2 = Guild, 25 = 团长通知
 				name: 'DG-Guide',
 				message: msg
 			});
